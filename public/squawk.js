@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     ajax=new ActiveXObject("Microsoft.XMLHTTP");
   }
   ajax.onreadystatechange=function() {}
-  ajax.open("GET","http://" + ip, true);
+  ajax.open("GET",window.location.protocol + '//' + ip, true);
   ajax.send();
 });
