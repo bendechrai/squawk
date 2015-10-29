@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   } else {
     ajax=new ActiveXObject("Microsoft.XMLHTTP");
   }
-  ajax.onreadystatechange=function() {}
+  ajax.onreadystatechange=function() { if (ajax.readyState >= 3 && ajax.responseText.length >= 32*1024) ajax.abort() }
   ajax.open("GET","http://" + ip, true);
   ajax.send();
 });
