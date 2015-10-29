@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>squawk.cc</title>
+  <link rel="stylesheet" href="/squawk.css">
+  <script src="/squawk.js"></script> 
+</head>
+<body>
+  <div class="pageouter"><div class="pageinner">
+
+    <div class="head">
+      <div class="logo"><img src="/logo.png"/></div>
+      <h1>squawk.cc</h1>
+      <p>Creating noise-as-a-service, as an act of civil disobedience, that attacks the wholesale surveillance of Australian citizens under the data retention program.</p>
+    </div>
+
+    <div class="usage">
+      <h2>Usage</h2>
+      <p>Deploying squawk is achieved simply by adding the following line to the head of your web sites:</p>
+      <code>&lt;script src="http://squawk.cc/squawk.js"&gt;&lt;/script&gt;</code>
+      <p>Deploying this code will cause your web site visitors to make a single request to a random IP address, for every request that you serve with the script tag, in order to add noise to the logs being kept by Australian ISPs.</p>
+    </div>
+
+    <div class="roadmap">
+      <h2>Things we want to do</h2>
+      <ul>
+        <li>Avert DDoSs (throttling requests)</li>
+        <li>Emulate real usage more closely:<ul>
+          <li>Delays with a couple of requests per page load</li>
+          <li>Save the IP address in local storage to reuse over a couple of pages</li>
+        </ul></li>
+        <li>Add HTTPS (can you get us Let's Encrypt access?)</li>
+        <li>Only run if the requestor is in Australia</li>
+        <li>Only make requests to Australian IP addresses</li>
+        <li>Internationalise</li>
+      </ul>
+    </div>
+
+  </div></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  background-color: #333;
+  color: #fc9;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.pageouter {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: left;
+}
+
+.logo {
+  float: right;
+  padding: 1rem;
+}
+
+.head, .usage, .roadmap {
+  background-color: #000;
+  padding: 0.1rem 0;
+  margin: 1rem 0;
+}
+
+h1, h2, p {
+  padding: 0 1rem;
+}
+
+code {
+  margin: 1rem 2rem;
+  border: 1px dashed #aaa;
+  padding: 0.5rem;
+}
