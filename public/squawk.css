@@ -1,6 +1,6 @@
 body {
   background-color: #333;
-  color: #fc9;
+  color: #eee;
   font-family: sans-serif;
   text-align: center;
 }
@@ -16,18 +16,40 @@ body {
   padding: 1rem;
 }
 
-.head, .usage, .roadmap {
+.head, .usage, .packages, .roadmap {
   background-color: #000;
   padding: 0.1rem 0;
-  margin: 1rem 0;
+}
+
+.usage, .packages {
+  width: 50%;
+  float: left;
+}
+
+.packages::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1, h2 {
+  color: #FFFF00;
 }
 
 h1, h2, p {
   padding: 0 1rem;
 }
 
+a {
+  color: #37A690;
+}
+
 code {
   margin: 1rem 2rem;
   border: 1px dashed #aaa;
   padding: 0.5rem;
+}
+
+li.done {
+  text-decoration: line-through;
 }
