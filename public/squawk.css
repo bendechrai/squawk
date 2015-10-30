@@ -44,10 +44,11 @@ a {
   color: #37A690;
 }
 
-code {
+pre {
   margin: 1rem 2rem;
   border: 1px dashed #aaa;
   padding: 0.5rem;
+  word-wrap: break-word;
 }
 
 li.done {
