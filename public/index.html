@@ -2,32 +2,49 @@
 <head>
   <title>squawk.cc</title>
   <link rel="stylesheet" href="squawk.css">
-  <script src="squawk.js"></script> 
+  <script src="//squawk.cc/squawk.js"></script> 
+  <meta property="og:locale" content="en_AU" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="squawk.cc" />
+  <meta property="og:description" content="Creating noise-as-a-service, as an act of civil disobedience, that attacks the wholesale surveillance of Australian citizens under the data retention program. https://squawk.cc/" />
+  <meta property="og:url" content="https://squawk.cc" />
+  <meta property="og:site_name" content="squawk.cc" />
+  <meta property="og:image" content="http://squawk.cc/logo.png" />
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:description" content="Creating noise-as-a-service, as an act of civil disobedience, that attacks the wholesale surveillance of Australian citizens under the data retention program." />
+  <meta name="twitter:title" content="squawk.cc: creating noise-as-a-service, as an act of civil disobedience, that attacks the wholesale surveillance of Australian citizens under the data retention program." />
+  <meta name="twitter:site" content="@squawkcc"/>
+  <meta name="twitter:domain" content="squawk.cc"/>
+  <meta name="twitter:image" content="http://squawk.cc/logo.png" />
 </head>
 <body>
   <div class="pageouter"><div class="pageinner">
 
-    <div class="head">
+    <div class="block head">
       <div class="logo"><img src="logo.png"/></div>
       <h1>squawk.cc</h1>
       <p>Creating noise-as-a-service, as an act of civil disobedience, that attacks the wholesale surveillance of Australian citizens under the data retention program.</p>
+      <p><a href="https://twitter.com/squawkcc">Follow us on twitter</a>, and <a href="https://twitter.com/intent/tweet?text=I'm+%40squawkcc+certified.+Are+you%3F+%23CivilDisobedience+%23DataRetention+https%3A%2F%2Fsquawk.cc">let us know you're squawk certified</a>!</p>
     </div>
 
-    <div class="usage">
+    <div class="block usage">
       <h2>Usage</h2>
-      <p>Deploying squawk is achieved simply by adding the following line to the head of your web sites:</p>
-      <pre>&lt;script src="http://squawk.cc/squawk.js"&gt;&lt;/script&gt;</pre>
-      <p>Deploying this code will cause your web site visitors to make a single request to a random IP address, for every request that you serve with the script tag, in order to add noise to the logs being kept by Australian ISPs.</p>
+      <div class="manual">
+        <h3>Manual</h3>
+        <p>Deploying squawk is achieved simply by adding the following line to the head of your web sites:</p>
+        <pre>&lt;script src="//squawk.cc/squawk.js"&gt;&lt;/script&gt;</pre>
+        <p>Deploying this code will cause your web site visitors to make a single request to a random IP address, for every request that you serve with the script tag, in order to add noise to the logs being kept by Australian ISPs.</p>
+      </div>
+
+      <div class="packages">
+        <h3>Packages</h3>
+        <p>You can install squawk as a package or module for various systems.</p>
+        <p>Drupal module: <a href="https://www.drupal.org/project/squawk">squawk</a> modules for Drupal versions 5, 6, 7 and 8 are available.</p>
+        <p>Have you created a module or package you'd like to add to this list? Simply <a href="https://github.com/bendechrai/squawk/issues/new">create an issue</a>, or submit a <a href="https://github.com/bendechrai/squawk">pull request to our GitHub repository</a>.</p>
+      </div>
     </div>
 
-    <div class="packages">
-      <h2>Packages</h2>
-      <p>You can install squawk as a package or module for various systems.</p>
-      <p>Drupal 7 and 8: <a href="https://www.drupal.org/project/squawk">squawk</a> for Drupal 7 and 8 was created by <a href="https://www.drupal.org/u/cafuego">Peter Lieverdink (cafuego)</a>.</p>
-      <p>Have you created a module or package you'd liek to add to this list? Simply <a href="https://github.com/bendechrai/squawk/issues/new">create an issue</a>, or submit a <a href="https://github.com/bendechrai/squawk">pull request to our GitHub repository</a>.</p>
-    </div>
-
-    <div class="roadmap">
+    <div class="block roadmap">
       <h2>Things we want to do</h2>
       <ul>
         <li>Avert DDoSs (throttling requests)</li>
@@ -35,11 +52,23 @@
           <li>Delays with a couple of requests per page load</li>
           <li>Save the IP address in local storage to reuse over a couple of pages</li>
         </ul></li>
-        <li>Add HTTPS (can you get us Let's Encrypt access?)</li>
+        <li class="done">Add HTTPS (can you get us Let's Encrypt access?)</li>
         <li>Only run if the requestor is in Australia</li>
         <li class="done">Only make requests to Australian IP addresses</li>
         <li>Internationalise</li>
       </ul>
+    </div>
+
+    <div class="block contributors">
+      <h2>Contributors</h2>
+      <p>Primary thanks need to go to <a href="http://nick.zoic.org/etc/squawk-cc-the-true-story/">Nick Moore</a> for coming up with the idea and roping me in to creating it over a pint in Hobart. Partial thanks also to Hobart for the great beer!</p>
+      <p>Like it or not, products just aren't adopted if they don't look good. I'd like to thank <a href="https://twitter.com/kattekrab">@kattekrab</a> for the logo, which not only reflects the project's onomatapoeic name perfectly, it's also a little cocky! See what I did there?</p>
+      <p>Thanks, also, to these awesome people for submitting pull requests to make the project better: <a href="https://github.com/RickMeasham">Rick Measham</a>, <a href="https://github.com/franciskim">Francis Kim</a>.</p>
+    </div>
+
+    <div class="block license">
+      <h2>License</h2>
+      <p>The <a href="https://github.com/bendechrai/squawk">squawk source code</a> is &copy; 2015 <a href="https://twitter.com/bendechrai">Ben Dechrai</a>, and made available under the <a href="https://github.com/bendechrai/squawk/blob/master/LICENSE.md">GPLv3</a>.</p>
     </div>
 
   </div></div>

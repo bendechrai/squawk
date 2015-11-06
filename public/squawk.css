@@ -16,27 +16,33 @@ body {
   padding: 1rem;
 }
 
-.head, .usage, .packages, .roadmap {
+.block {
+  clear: left;
   background-color: #000;
   padding: 0.1rem 0;
+  margin: 1rem 0;
 }
 
-.usage, .packages {
-  width: 50%;
-  float: left;
-}
-
-.packages::after {
+.block:after {
   content: "";
   display: block;
   clear: both;
 }
 
-h1, h2 {
-  color: #FFFF00;
+@media screen and (min-width: 700px) {
+  .manual, .packages {
+    width: 50%;
+    float: left;
+  }
 }
 
-h1, h2, p {
+h1, h2, h3 {
+  /*color: #FFFF00;*/
+  color: #37A690;
+  margin: 0.5rem 0 0 0;
+}
+
+h1, h2, h3, p {
   padding: 0 1rem;
 }
 
@@ -49,6 +55,7 @@ pre {
   border: 1px dashed #aaa;
   padding: 0.5rem;
   word-wrap: break-word;
+  white-space: normal;
 }
 
 li.done {
