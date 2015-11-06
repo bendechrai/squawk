@@ -16,14 +16,14 @@ body {
   padding: 1rem;
 }
 
-.head, .usage, .roadmap {
+.block {
   clear: left;
   background-color: #000;
   padding: 0.1rem 0;
   margin: 1rem 0;
 }
 
-.head:after, .usage:after, .roadmap:after {
+.block:after {
   content: "";
   display: block;
   clear: both;
