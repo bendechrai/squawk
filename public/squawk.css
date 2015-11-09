@@ -5,6 +5,10 @@ body {
   text-align: center;
 }
 
+body.squawk h1 {
+  display: none;
+}
+
 .pageouter {
   margin: 0 auto;
   max-width: 960px;
