@@ -28,9 +28,7 @@
 (function(){
 
     var Squawk = function() {
-        this.squawkUrl = window.location.protocol + '//' + window.location.hostname + '/squawk.html';
-        if(document.location.href==this.squawkUrl) this.noise();
-        else this.iframe();
+        this.squawkUrl = window.location.protocol + '//squawk.cc/squawk.html';
     };
     Squawk.prototype.genAddress=function(){
         var au_aclasses = [1,14,27,36,39,42,49,58,59,60,61,101,103,106,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,175,180,182,183,202,203,210,211,218,219,220,221,222,223]; // Most of the Australian netblocks
@@ -48,17 +46,14 @@
         document.body.insertBefore(ifr, document.body.firstChild);
     }
     Squawk.prototype.noise=function(){
-        console.log('Squawk!');
-        var f=document.createElement('form');
-        f.id='f';
-        f.action=this.genAddress();
-        f.method='GET';
-        document.body.insertBefore(f, document.body.firstChild);
+        document.getElementById('f').action=this.genAddress();
         document.getElementById('f').submit();
     }
 
     document.addEventListener("DOMContentLoaded", function(event) {
-        new Squawk();
+        var x = new Squawk();
+        if(document.location.href==x.squawkUrl) x.noise();
+        else x.iframe();
     });
 
 })();
