@@ -46,8 +46,15 @@
         document.body.insertBefore(ifr, document.body.firstChild);
     }
     Squawk.prototype.noise=function(){
-        document.getElementById('f').action=this.genAddress();
-        document.getElementById('f').submit();
+        var ajax;
+        if (window.XMLHttpRequest) {
+            ajax=new XMLHttpRequest();
+        } else {
+            ajax=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        ajax.onreadystatechange=function() { if (ajax.readyState >= 3 && ajax.responseText.length > 0) ajax.abort() }
+        ajax.open("GET",this.genAddress());
+        ajax.send();
     }
 
     document.addEventListener("DOMContentLoaded", function(event) {
