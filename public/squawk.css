@@ -30,7 +30,7 @@ body {
 }
 
 @media screen and (min-width: 700px) {
-  .manual, .packages {
+  .manual, .packages, .code, .preview {
     width: 50%;
     float: left;
   }
@@ -50,7 +50,7 @@ a {
   color: #37A690;
 }
 
-pre {
+pre, div.squawk {
   margin: 1rem 2rem;
   border: 1px dashed #aaa;
   padding: 0.5rem;
