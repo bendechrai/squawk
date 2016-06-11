@@ -45,5 +45,5 @@ Thanks, also, to these awesome people for submitting pull requests to make the p
 
 ## License
 
-The [squawk source code](https://github.com/bendechrai/squawk) is © 2015 [Ben Dechrai](https://twitter.com/bendechrai), and made available under the [GPLv3](https://github.com/bendechrai/squawk/blob/master/LICENSE.md).
+The [squawk source code](https://github.com/bendechrai/squawk) is © 2016 [Ben Dechrai](https://twitter.com/bendechrai), and made available under the [GPLv3](https://github.com/bendechrai/squawk/blob/master/LICENSE.md).
 
