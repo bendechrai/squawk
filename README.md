@@ -30,10 +30,11 @@ Have you created a module or package you'd like to add to this list? Simply [cre
 *   Emulate real usage more closely:
     *   Delays with a couple of requests per page load
     *   Save the IP address in local storage to reuse over a couple of pages
-*   [DONE] Add HTTPS (can you get us Let's Encrypt access?)</del>
+*   ~~Add HTTPS (can you get us Let's Encrypt access?)~~
 *   Only run if the requestor is in Australia
-*   [DONE] Only make requests to Australian IP addresses
+*   ~~Only make requests to Australian IP addresses~~
 *   Internationalise
+*   ~~Hide the referrer~~
 
 ## Contributors
 
